@@ -1,0 +1,13 @@
+server:
+  port: 5000
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: techbank
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092 # can be a list of servers
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.support.JsonSerializer
